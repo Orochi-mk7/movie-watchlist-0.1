@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("imgs/godzilla-king-of-the-monsters-godzilla-creature-king-ghidorah-movies-hd-wallpaper-84a52b59493a2d040e3ad9eac5e00b64.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin: 0;
+}
+
+.navi-btn {
+   background: none;
+   border: none;
+   padding: 0;
+}
+
+a {
+    font-size: 1rem;
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+main {
+    padding-bottom: 5vh;
+}
+
+.form-section{
+    position: absolute;
+    top: 23vh;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 4vh;
+    padding: 0;
+    padding-left: 30px;
+    margin: 0;
+    border: none;
+    outline: none;
+    border-right: 1px solid #D1D5DB;
+    background-image: url("imgs/Search.png");
+    background-size: 25px;
+    background-position: 5px 7px; 
+    background-repeat: no-repeat;
+}
+
+.form-btn {
+    border: none;
+    height: 4vh;
+    padding: 0 25px 0 25px;
+    margin: 0;
+    color: #374151;
+    font-size: 1rem;
+    background-color: #F9FAFB;
+}
+.form-btn:hover {
+    cursor: pointer;
+}
+/* main section/movie item */
+
+.item-container {
+    padding: 3vh 3vh 0 3vh;
+    display: flex;
+}
+.item-container:first-child {
+    margin-top: 3vh;
+}
+.poster-container {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.no-data-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 30vh;
+    color: #c3c3c3;
+    font-size: 1.125rem;
+    font-weight: 700;
+    gap: 10px;
+}
+.watchlist-icon-nodata {
+    width: 1rem;
+}
+
+.no-watchlist-add-more-div{
+    display: flex;
+    gap: 0.5rem;
+}
+.no-watchlist-add-more-div span {
+    color: black;
+    font-size: 1.2rem;
+}
+.empty-watchlist-text {
+    font-size: 1.5rem;
+}
+
+.img-poster {
+    height: 85%;  
+    
+}
+
+h2, p {
+    margin: 0;
+}
+p {
+    font-size: 12px;
+}
+.text-discrption {
+    color: #6B7280;
+}
+
+.item-breakdown {
+    margin-left: 10px;
+}
+
+.item-title {
+    display: flex;
+    align-items: center;   
+}
+
+.item-info {
+    display: flex;
+    padding: 15px 0 15px 0;
+    gap: 1em; 
+}
+
+.watchlist-btn {
+    background: none;
+    border: none;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.watchlist-btn:hover {
+    cursor: pointer;
+}
+.watchlist-icon {
+    width: 100%;
+    color: #111827;
+    margin-right: 7px;
+}
+
+.movie-title {
+    font-size: 20px;
+}
+
+.empty-watchlist {
+    display: flex;
+}
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 2.625rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+}
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watch List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Watchlist</h1>
+        <button class="navi-btn"><a href="index.html">Search</a></button>
+    </header>
+    <section class="form-section">
+        <form>
+            <input type="text" id="movie-search">
+            <button class="form-btn" id="form-btn">Search</button>
+        </form>
+    </section>
+    <main>
+        <div id="posts-container">
+            <div class="no-data-div" id="empty-watchlist" role="button" data-movie="${result.Title}">
+                <p class="empty-watchlist-text">Your watchlist is looking a little empty...</p>
+                <a href="index.html">                   
+                    <div class="no-watchlist-add-more-div">                   
+                        <img src="imgs/Icon.svg" class="watchlist-icon-nodata"> 
+                        <span>Let’s add some movies!</span>
+                    </div>
+                </a>    
+            </div>
+        </div>    
+    </main>
+    <script src="watchlist.js" type="module"></script>
+</body>
+</html>
