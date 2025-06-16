@@ -32,7 +32,7 @@ function handleWatchList(e) {
 function handleSubmitClick(e) {
     e.preventDefault()
     let search = movieSearch.value
-    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=729e5f49&s=${search}`)
+    fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=729e5f49&s=${search}`)
     .then(res => res.json())
     .then(data => getDetailedinfo(data))
 }
@@ -43,7 +43,7 @@ function getDetailedinfo(items) {
     let completed = 0
     if (!items.Error) {
     items.Search.forEach(element => {
-        fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=729e5f49&t=${element.Title}`)
+        fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=729e5f49&t=${element.Title}`)
         .then(res => res.json())
         .then(data => {
 
