@@ -12,7 +12,7 @@ function detailedWatchlist (movieData) {
     let movieArray = []
     let completed = 0
     movieData.forEach(movie => {
-        fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=729e5f49&t=${movie}`)
+        fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=729e5f49&t=${movie}`)
         .then(res => res.json())
         .then(data => {
             movieArray.push(data)
